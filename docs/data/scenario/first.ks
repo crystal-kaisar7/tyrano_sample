@@ -1,46 +1,129 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="ジャパンカップ"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+[cm]
+「ジャパンカップ2023」[l][r]
 
-メロスは激怒した。[l][r]
+あなたはジャパンカップの騎手となりました。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+騎乗する馬を選んでください。[l][r]
 
-(中略)[l][r]
+以下、馬の情報です。[r]
+1番人気　イクイノックス　　　牡馬　4歳  脚質　差し[r]
+2番人気　リバティアイランド　牝馬　3歳　脚質　差し[r]
+3番人気　ドウドュース　　　　牡馬　4歳　脚質　先行[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*ikui] →イクイノックス [endlink][r]
+[link target=*riba] →リバティアイランド [endlink][r]
+[link target=*dou] →ドウドュース [endlink][r]
 [s]
 
-*tag_sleep
+*ikui
+
+[cm]
+
+スタートしました！[l][r]
+イクイノックスはスムーズなスタート！[r]
+
+[link target=*ikuisenkou] →3～5番手を維持 [endlink][r]
+[link target=*ikuityu] →中団で脚をためる [endlink][r]
+[s]
+
+*ikuisenkou
+
+[cm]
+
+第4コーナー回りました！[l][r]
+イクイノックスは3番手！[l][r]
+そのまま差し切ってゴールイン！[l][r]
+圧倒的な強さで1着です！[l][r]
+
+[jump target=*start]
+
+
+*ikuityu
+
+[cm]
+
+第4コーナー回りました！[l][r]
+イクイノックスは中団！[l][r]
+進路をふさがれ外に持ち出す！[l][r]
+差し切れず3着です！[l][r]
+
+[jump target=*start]
+
+
+*riba
+
+[cm]
+
+スタートしました！[l][r]
+リバティアイランドは少し出遅れました！[r]
+
+[link target=*ribatyu] →中団を取りに行く [endlink][r]
+[link target=*ribakouhou] →後方で脚をためる [endlink][r]
+[s]
+
+*ribatyu
+
+[cm]
+
+第4コーナー回りました！[l][r]
+リバティアイランドは中団！[l][r]
+差し切れるか！[l][r]
+わずかに届かず2着です！[l][r]
+
+[jump target=*start]
+
+
+*ribakouhou
+
+[cm]
+
+第4コーナー回りました！[l][r]
+リバティアイランドは後方！[l][r]
+大外から追い上げてくる！[l][r]
+滑り込んで3着です！[l][r]
+
+[jump target=*start]
+
+
+*dou
 
 [cm]
 
 [bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+スタートしました！[l][r]
+ドウドュースは好スタート！[r]
 
-【 BAD END 】[l][cm]
+[link target=*dousenkou] →3～5番手を維持 [endlink][r]
+[link target=*dousentou] →ハナ（先頭）を取りに行く [endlink][r]
+[s]
+
+*dousenkou
+
+[cm]
+
+第4コーナー回りました！[l][r]
+ドウドュースは3番手！[l][r]
+粘れるか！[l][r]
+粘って2着です！[l][r]
 
 [jump target=*start]
 
-*tag_run
 
-[bg storage=run.jpg time=500]
+*dousentou
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+第4コーナー回りました！[l][r]
+ドウドュースは先頭！[l][r]
+逃げ切れるか！[l][r]
+刺されて馬券外です！[l][r]
 
 [jump target=*start]
